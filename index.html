@@ -4,14 +4,81 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="/src/style.css" />
     <script type="module" src="/src/main.ts" defer></script>
 
     <title>To Do and calculator</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <nav class="menu">
+        <ul class="nav-items">
+          <!-- <li>
+            <i class="material-symbols-outlined"> menu </i>
+          </li> -->
+          <li class="active"><a href="#to_do"></a>TO DO LIST</li>
+          <li><a href="#calculator"></a>CALCULATOR</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- ---------------------to do list----------------------  -->
+      <section id="to_do">
+        <div class="newtask">
+          <input type="text" class="type" placeholder="Add new task..." />
+          <button type="submit" class="btn">Add</button>
+        </div>
+        <hr />
+        <ul class="tasklist">
+          <!-- <li>
+            new task is added
+            <button class="btn-close">
+              <i class="material-symbols-outlined"> close </i>
+            </button>
+          </li> -->
+        </ul>
+      </section>
+      <!-- -----------------calculator-------------------------- -->
+      <section id="calculator">
+        <div class="display">
+          <input type="text" name="display" />
+        </div>
+        <div>
+          <input type="button" value="Ac" />
+          <input type="button" value="Del" />
+          <input type="button" value="%" />
+          <input type="button" value="/" />
+        </div>
+        <div>
+          <input type="button" value="7" />
+          <input type="button" value="8" />
+          <input type="button" value="9" />
+          <input type="button" value="*" />
+        </div>
+        <div>
+          <input type="button" value="4" />
+          <input type="button" value="5" />
+          <input type="button" value="6" />
+          <input type="button" value="-" />
+        </div>
+        <div>
+          <input type="button" value="1" />
+          <input type="button" value="2" />
+          <input type="button" value="3" />
+          <input type="button" value="+" />
+        </div>
+        <div>
+          <input type="button" value="00" />
+          <input type="button" value="0" />
+          <input type="button" value="." />
+          <input type="button" value="=" />
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
