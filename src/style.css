@@ -70,16 +70,21 @@ input[name="display"] {
   background: transparent;
   cursor: pointer;
   color: #c5c6c7;
+  padding: 15px;
   flex: 1;
   border: #45a29e double;
-  font-size: 20px;
+  font-size: 35px;
   height: 100px;
-  text-align: right;
+  width: 90px;
+  text-align: end;
+  outline: none;
+  box-shadow: inset -2px -2px 10px #373e47, inset 2px 2px 10px #373e47;
 }
 
 /* -------------------------------to do list----------------------------------  */
 #to_do {
   display: inline-block;
+  width: 70%;
 }
 
 .type {
@@ -91,6 +96,7 @@ input[name="display"] {
   font-size: 20px;
   padding: 8px;
   color: #c5c6c7;
+  outline: none;
 }
 
 .btn {
@@ -118,6 +124,10 @@ hr {
   border: 0;
   height: 1px;
   box-shadow: 0px 1px 10px 1px #45a29e;
+}
+
+.tasklist {
+  display: inline-block;
 }
 
 .tasklist>li {
