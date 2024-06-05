@@ -1,9 +1,11 @@
 {
+  "homepage": "https://github.com/Aliya720/to_do_list/",
   "name": "to_do_list",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
