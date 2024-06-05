@@ -18,6 +18,11 @@ body {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: #c5c6c7;
+}
+
 .nav-items>li {
   list-style: none;
   padding: 20px;
@@ -32,9 +37,13 @@ body {
   font-weight: 600;
 }
 
+main {
+  display: flex;
+}
+
 
 #calculator {
-  float: right;
+  flex: 1;
   background-color: #0b0c10;
   border-radius: 10px;
   padding: 15px;
@@ -83,6 +92,7 @@ input[name="display"] {
 
 /* -------------------------------to do list----------------------------------  */
 #to_do {
+  flex: 3.5;
   display: inline-block;
   width: 70%;
 }
@@ -123,6 +133,7 @@ hr {
   margin: 20px 0px 30px 0px;
   border: 0;
   height: 1px;
+  width: 85%;
   box-shadow: 0px 1px 10px 1px #45a29e;
 }
 
@@ -165,15 +176,34 @@ hr {
 
 @media (max-width:1024px) {
 
-  #to_do {
-    display: none;
+  main {
+    display: block;
   }
 
+  .type {
+    width: 100%;
+
+  }
+
+
+  #to_do {
+    display: block;
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+
   #calculator {
-    display: none;
+    display: inline-block;
   }
 
   .menu {
     display: flex;
+    position: sticky;
   }
 }

@@ -28,7 +28,6 @@ function addTask(): void {
 
     i!.addEventListener("click", () => {
         taskList.removeChild(li);
-        console.log("clicked")
     });
 
 }
@@ -59,4 +58,15 @@ del.addEventListener("click", () => {
     result.value = result.value.slice(0, -1);
 })
 
-
+result.addEventListener("keyup", (e: any) => {
+    let x = e.which || e.keycode;
+    if ((x >= 65 && x <= 90 || x >= 97 && x <= 122)) {
+        result.value = "";
+        alert("Alphabets are not allowed")
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+);
