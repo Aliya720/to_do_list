@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/to_do_list/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>To Do and calculator</title>
+    <script type="module" crossorigin src="/to_do_list/assets/index-8MbbWBLy.js"></script>
+    <link rel="stylesheet" crossorigin href="/to_do_list/assets/index-BfGQgj0d.css">
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul class="nav-items">
+          <li class="active"><a href="#to_do">TO DO LIST</a></li>
+          <li><a href="#calculator">CALCULATOR</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- ---------------------to do list----------------------  -->
+      <section id="to_do">
+        <div class="newtask">
+          <input type="text" class="type" placeholder="Add new task..." />
+          <button type="submit" class="btn">Add</button>
+        </div>
+        <hr />
+        <ul class="tasklist"></ul>
+      </section>
+      <!-- -----------------calculator-------------------------- -->
+      <section id="calculator">
+        <div class="display">
+          <input type="text" name="display" id="display" placeholder="0" />
+        </div>
+        <div>
+          <input type="button" id="clear" value="Ac" />
+          <input type="button" id="del" value="Del" />
+          <input type="button" class="data" value="%" />
+          <input type="button" class="data" value="/" />
+        </div>
+        <div>
+          <input type="button" class="data" value="7" />
+          <input type="button" class="data" value="8" />
+          <input type="button" class="data" value="9" />
+          <input type="button" class="data" value="*" />
+        </div>
+        <div>
+          <input type="button" class="data" value="4" />
+          <input type="button" class="data" value="5" />
+          <input type="button" class="data" value="6" />
+          <input type="button" class="data" value="-" />
+        </div>
+        <div>
+          <input type="button" class="data" value="1" />
+          <input type="button" class="data" value="2" />
+          <input type="button" class="data" value="3" />
+          <input type="button" class="data" value="+" />
+        </div>
+        <div>
+          <input type="button" class="data" value="00" />
+          <input type="button" class="data" value="0" />
+          <input type="button" class="data" value="." />
+          <input type="button" id="equal" value="=" />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
