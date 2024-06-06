@@ -1,16 +1,18 @@
 {
-  "homepage": "https://github.com/Aliya720/to_do_list/",
+  "homepage": "https://Aliya720.github.io/to_do_list/",
   "name": "to_do_list",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "tsc && vite build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }
